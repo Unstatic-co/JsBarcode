@@ -1,3 +1,5 @@
+import barcodes from "./src/barcodes";
+
 declare namespace JsBarcode {
   interface BaseOptions {
     width?: number;
@@ -70,5 +72,5 @@ declare namespace JsBarcode {
 declare function JsBarcode(element: any): JsBarcode.api;
 declare function JsBarcode(element: any, data: string, options?: JsBarcode.Options): void;
 
-export = JsBarcode;
-export as namespace JsBarcode;
+export = barcodes;
+export as namespace barcodes;
